@@ -1,6 +1,7 @@
-#include <ESP8266WiFi.h>               //Defining Libraries
+#include <ESP8266WiFi.h>                       //Defining Libraries
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
+
 
 const char* ssid = "WiFi SSID";          
 const char* password = "WiFi Password";     
@@ -10,8 +11,10 @@ const int64_t chat_id = CHAT ID;
 #define ECHO_PIN D5
 #define LED_PIN  D1
 
+
 WiFiClientSecure client;
 UniversalTelegramBot bot(botToken, client);
+
 
 void setup() {
   Serial.begin(115200);
@@ -28,6 +31,7 @@ void setup() {
   Serial.println("WiFi connected!");
   client.setInsecure(); // For simple SSL
 }
+
 
 void loop() {
   digitalWrite(TRIG_PIN, LOW); delayMicroseconds(2);
