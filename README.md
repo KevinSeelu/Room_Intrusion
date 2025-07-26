@@ -44,6 +44,15 @@ Jumper Wires                 xMultiple
 Breadboard	                 x1	
 
 
+Connections:
+(HC-SR04 Sensor)VCC  -  3.3V(ESP)
+(HC-SR04 Sensor)TRIGGER  -  D6(ESP)
+(HC-SR04 Sensor)ECHO  -  D5(ESP) 
+(HC-SR04 Sensor)GROUND -  GND(ESP)
+(LED)ANODE  -  D1(ESP)  (NOTE: THROUGH A 220Ω/1000Ω Resistor)
+(LED)CATHODE  -  GND(ESP)
+
+
 Core Functionality:
 The system operates on a simple but effective algorithm:
 
